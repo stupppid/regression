@@ -29,7 +29,7 @@ def partial_derivative(i):
             t = 1
         else:
             t = point[i - 1]
-        p += (1 / (1 - math.e ** -(theta0 + theta1 * point[0] + theta2 * point[1])) - point[2])*t
+        p += (1 / (1 + math.e ** -(theta0 + theta1 * point[0] + theta2 * point[1])) - point[2])*t
     return p
 
 # lmd is the parameter to minimize the thetas' value for regulization
