@@ -93,7 +93,7 @@ class NeuralLayer():
         m = 1
         for i, ac_i in enumerate(self.accumulator):
             for j, ac_ij in enumerate(ac_i):
-                if j == 0:
+                if j != 0:
                     self.theta[i][j] -= self.__ALPHA * (ac_ij / m + self.__LAMDA * self.theta[i][j])
                 else:
                     self.theta[i][j] -= self.__ALPHA * ac_ij / m
