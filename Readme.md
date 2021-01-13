@@ -1,2 +1,1 @@
-This repository is for learning neural network things.
-
+This repository is for learning machine learning things.
